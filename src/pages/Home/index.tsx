@@ -47,7 +47,7 @@ export function Home() {
     },
   })
 
-  // const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
+  const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
 
   useEffect(() => {
     if (activeCycle) {
@@ -74,7 +74,7 @@ export function Home() {
     reset()
   }
 
-  const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
+  // const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
 
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0
